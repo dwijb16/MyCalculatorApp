@@ -2,6 +2,7 @@ package com.example.mycalculatorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -58,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
 
         numberSumTV.setText("Final Answer: " + quotient);
     }
+    public void switchScreens(View v){
+        Intent intent = new Intent(this, SecondActivity.class);
+        // first param is the sender of the intent(this activity)
+        //second param is the receiver, which is the SecondActivity
+        startActivity(intent);
+
+    }
+
 
 
 }

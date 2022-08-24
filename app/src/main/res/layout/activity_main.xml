@@ -4,22 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:hapticFeedbackEnabled="false"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/SecondNum"
-        android:layout_width="163dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="112dp"
+        android:layout_width="182dp"
+        android:layout_height="61dp"
         android:ems="10"
         android:hint="Second Number"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Result"
-        app:layout_constraintVertical_bias="0.694" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356" />
 
     <Button
         android:id="@+id/addition"
@@ -31,13 +32,13 @@
 
         android:text="+"
         android:textColor="@color/pink"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.626" />
+        app:layout_constraintVertical_bias="0.629" />
 
     <Button
         android:id="@+id/subtraction"
@@ -47,10 +48,10 @@
         android:onClick="findDifference"
         android:text="-"
         android:textColor="@color/pink"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addition"
         app:layout_constraintVertical_bias="0.0" />
@@ -60,33 +61,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:onClick="findProduct"
         android:backgroundTint="@color/BrightBlue"
+        android:onClick="findProduct"
         android:text="*"
         android:textColor="@color/pink"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subtraction"
-        app:layout_constraintVertical_bias="0.114" />
+        app:layout_constraintVertical_bias="0.012" />
 
     <Button
         android:id="@+id/division"
-        android:onClick="findQuotient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/BrightBlue"
+        android:onClick="findQuotient"
         android:text="/"
         android:textColor="@color/pink"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/multiplication"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/Result"
@@ -97,23 +98,36 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.182" />
+        app:layout_constraintVertical_bias="0.028" />
 
     <EditText
         android:id="@+id/firstNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
         android:ems="10"
         android:hint="First Number"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/addition"
-        app:layout_constraintEnd_toStartOf="@+id/SecondNum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addition"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Result"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <Button
+        android:id="@+id/goToTrig"
+        android:layout_width="263dp"
+        android:layout_height="164dp"
+        android:onClick="switchScreens"
+        android:text="Click here to get a trig Function Calculator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
