@@ -5,9 +5,9 @@
         <shape>
             <gradient
                 android:endColor="@color/BrightBlue"
-                android:centerColor="@color/white"
-                android:startColor="@color/Orange"
-                android:type="linear" />
+                android:gradientRadius="300dp"
+                android:startColor="@color/pink"
+                android:type="radial" />
         </shape>
     </item>
 </selector>

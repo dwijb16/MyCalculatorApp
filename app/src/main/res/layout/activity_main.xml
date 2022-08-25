@@ -10,17 +10,17 @@
 
     <EditText
         android:id="@+id/SecondNum"
-        android:layout_width="182dp"
-        android:layout_height="61dp"
+        android:layout_width="170dp"
+        android:layout_height="99dp"
         android:ems="10"
         android:hint="Second Number"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintVertical_bias="0.244" />
 
     <Button
         android:id="@+id/addition"
@@ -105,8 +105,8 @@
 
     <EditText
         android:id="@+id/firstNum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="229dp"
+        android:layout_height="81dp"
         android:ems="10"
         android:hint="First Number"
         android:inputType="textPersonName"
@@ -115,7 +115,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374" />
+        app:layout_constraintVertical_bias="0.272" />
 
     <Button
         android:id="@+id/goToTrig"
