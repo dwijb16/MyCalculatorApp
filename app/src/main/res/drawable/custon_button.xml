@@ -1,0 +1,9 @@
+<!--from schemas.androidcom's tutorial on how to make a custom button-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/Orange" />
+            <stroke android:width="10px" android:color="@color/pink" />
+        </shape>
+    </item>
+</selector>

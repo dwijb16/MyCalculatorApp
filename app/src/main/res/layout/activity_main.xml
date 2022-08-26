@@ -26,68 +26,65 @@
         android:id="@+id/addition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/BrightBlue"
 
         android:onClick="findSum"
 
         android:text="+"
-        android:textColor="@color/pink"
+        android:background="@drawable/custon_button"
+        android:textColor="@color/BrightBlue"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/subtraction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/BrightBlue"
+        android:background="@drawable/custon_button"
         android:onClick="findDifference"
         android:text="-"
-        android:textColor="@color/pink"
+        android:textColor="@color/BrightBlue"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintHorizontal_bias="0.708"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addition"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/multiplication"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/BrightBlue"
+        android:background="@drawable/custon_button"
         android:onClick="findProduct"
         android:text="*"
-        android:textColor="@color/pink"
+        android:textColor="@color/BrightBlue"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintHorizontal_bias="0.708"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtraction"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
 
     <Button
         android:id="@+id/division"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/BrightBlue"
+        android:background="@drawable/custon_button"
         android:onClick="findQuotient"
         android:text="/"
-        android:textColor="@color/pink"
+        android:textColor="@color/BrightBlue"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/multiplication"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
 
     <TextView
         android:id="@+id/Result"
@@ -101,7 +98,9 @@
         app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.041" />
+
+
 
     <EditText
         android:id="@+id/firstNum"
@@ -117,17 +116,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.272" />
 
-    <Button
-        android:id="@+id/goToTrig"
-        android:layout_width="263dp"
-        android:layout_height="164dp"
-        android:onClick="switchScreens"
-        android:text="Click here to get a trig Function Calculator"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.826" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
