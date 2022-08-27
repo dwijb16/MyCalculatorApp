@@ -113,7 +113,27 @@ public class MainActivity extends AppCompatActivity {
         }
         }
     }
+    public void findPow(View view) {
+        EditText number1ET = findViewById(R.id.firstNum);
+        EditText number2ET = findViewById(R.id.SecondNum);
+        TextView numberSumTV = findViewById(R.id.Result);
+        if(number2ET.getText().toString().equals("")  || number1ET.getText().toString().equals("")){
+            // from developer.android.com's toast popup thing
+            Context context = getApplicationContext();
+            CharSequence text = "Please enter both input!";
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+        }else {
 
 
+            double num1 = Integer.parseInt((number1ET.getText().toString()));
+            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double exp = Math.pow(num1,num2);
+            String formattedString = String.format("%.02f", exp);
 
+
+            numberSumTV.setText("Final Answer: " + formattedString);
+        }
+    }
 }
